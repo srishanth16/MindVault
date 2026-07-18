@@ -1,0 +1,5 @@
+Attempting to import from app.config import settings...
+✓ Success!
+MONGODB_URL: mongodb+srv://mindvault:mindvault@cluster0.mongodb.net/mindvault?retryWrites=true&w=majority
+JWT_SECRET: mindvault_super_secret_key_change_in_production
+UPLOAD_DIR: ../uploads

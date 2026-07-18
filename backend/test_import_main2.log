@@ -1,0 +1,6 @@
+test_import_main2.py starting
+1. Trying to import app.main...
+   OK!
+2. Trying to get app...
+   OK!
+app: <fastapi.applications.FastAPI object at 0x000001D30BD4A3C0>

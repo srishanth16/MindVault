@@ -1,0 +1,7 @@
+Starting debug script...
+Python version: 3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]
+CWD: C:\Users\srishanth\Desktop\mindvault\backend
+sys.path: ['C:\\Users\\srishanth\\Desktop\\mindvault\\backend', 'C:\\Users\\srishanth\\AppData\\Local\\Programs\\Python\\Python313\\python313.zip', 'C:\\Users\\srishanth\\AppData\\Local\\Programs\\Python\\Python313\\DLLs', 'C:\\Users\\srishanth\\AppData\\Local\\Programs\\Python\\Python313\\Lib', 'C:\\Users\\srishanth\\AppData\\Local\\Programs\\Python\\Python313', 'C:\\Users\\srishanth\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages', 'C:\\Users\\srishanth\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\win32', 'C:\\Users\\srishanth\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\win32\\lib', 'C:\\Users\\srishanth\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pythonwin']
+1. Importing app.config...
+✓ app.config imported!
+✗ app.config failed: UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 0: character maps to <undefined>

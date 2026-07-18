@@ -1,0 +1,25 @@
+Attempting to import app.services.vector_db...
+✗ Failed: OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+Traceback (most recent call last):
+  File "C:\Users\srishanth\Desktop\mindvault\backend\test_vector_db.py", line 14, in <module>
+    import app.services.vector_db
+  File "C:\Users\srishanth\Desktop\mindvault\backend\app\services\vector_db.py", line 28, in <module>
+    embeddings = OpenAIEmbeddings()
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\pydantic\main.py", line 192, in __init__
+    self.__pydantic_validator__.validate_python(data, self_instance=self)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\langchain_openai\embeddings\base.py", line 452, in validate_environment
+    self.async_client = openai.AsyncOpenAI(
+                        ~~~~~~~~~~~~~~~~~~^
+        **client_params,
+        ^^^^^^^^^^^^^^^^
+        **async_specific,  # type: ignore[arg-type]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ).embeddings
+    ^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\openai\_client.py", line 826, in __init__
+    raise OpenAIError(
+        "Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable."
+    )
+openai.OpenAIError: Missing credentials. Please pass an `api_key`, `workload_identity`, `admin_api_key`, or set the `OPENAI_API_KEY` or `OPENAI_ADMIN_KEY` environment variable.
+

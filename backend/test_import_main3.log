@@ -1,0 +1,113 @@
+[10:50:13] Testing import app.main and then running uvicorn
+[10:50:13] 1. Importing app.main
+[10:50:19] ✓ app.main imported
+[10:50:19] 2. Getting app
+[10:50:19] ✓ app got
+[10:50:19]   app routes:
+[10:50:19]     - /openapi.json
+[10:50:19]     - /docs
+[10:50:19]     - /docs/oauth2-redirect
+[10:50:19]     - /redoc
+[10:50:19]     - /api/auth/register
+[10:50:19]     - /api/auth/login
+[10:50:19]     - /api/auth/me
+[10:50:19]     - /api/auth/profile
+[10:50:19]     - /api/documents/
+[10:50:19]     - /api/documents/upload
+[10:50:19]     - /api/documents/search
+[10:50:19]     - /api/documents/{document_id}
+[10:50:19]     - /api/documents/{document_id}
+[10:50:19]     - /api/documents/{document_id}
+[10:50:19]     - /api/notes/
+[10:50:19]     - /api/notes/
+[10:50:19]     - /api/notes/{note_id}
+[10:50:19]     - /api/notes/{note_id}
+[10:50:19]     - /api/notes/{note_id}
+[10:50:19]     - /api/folders/
+[10:50:19]     - /api/folders/
+[10:50:19]     - /api/folders/{folder_id}
+[10:50:19]     - /api/folders/{folder_id}
+[10:50:19]     - /api/stats
+[10:50:19]     - /api/chat/
+[10:50:19]     - /api/search/semantic
+[10:50:19]     - /api/health
+[10:50:19] 3. Now starting uvicorn
+[10:50:20]   uvicorn imported
+INFO:     Started server process [340]
+INFO:     Waiting for application startup.
+ERROR:    Traceback (most recent call last):
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\starlette\routing.py", line 693, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+               ~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\fastapi\routing.py", line 133, in merged_lifespan
+    async with original_context(app) as maybe_original_state:
+               ~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 214, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\srishanth\Desktop\mindvault\backend\app\main.py", line 13, in lifespan
+    create_indexes()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\srishanth\Desktop\mindvault\backend\app\database.py", line 30, in create_indexes
+    db = get_database()
+  File "C:\Users\srishanth\Desktop\mindvault\backend\app\database.py", line 21, in get_database
+    client = get_client()
+  File "C:\Users\srishanth\Desktop\mindvault\backend\app\database.py", line 15, in get_client
+    _client = MongoClient(settings.MONGODB_URL)
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\mongo_client.py", line 774, in __init__
+    res = uri_parser.parse_uri(
+        entity,
+    ...<6 lines>...
+        srv_max_hosts=srv_max_hosts,
+    )
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\uri_parser.py", line 542, in parse_uri
+    nodes = dns_resolver.get_hosts()
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\srv_resolver.py", line 140, in get_hosts
+    _, nodes = self._get_srv_response_and_hosts(True)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\srv_resolver.py", line 120, in _get_srv_response_and_hosts
+    results = self._resolve_uri(encapsulate_errors)
+  File "C:\Users\srishanth\AppData\Local\Programs\Python\Python313\Lib\site-packages\pymongo\srv_resolver.py", line 114, in _resolve_uri
+    raise ConfigurationError(str(exc)) from None
+pymongo.errors.ConfigurationError: The DNS query name does not exist: _mongodb._tcp.cluster0.mongodb.net.
+
+ERROR:    Application startup failed. Exiting.

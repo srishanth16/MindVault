@@ -1,0 +1,8 @@
+[10:48:14] Starting step by step import 3
+[10:48:14] Step 1: import app.api.notes
+[10:48:17] ✓ app.api.notes imported
+[10:48:17] Step 2: import app.api.chat
+[10:48:37] ✓ app.api.chat imported
+[10:48:37] Step 3: import app.api.search
+[10:48:37] ✓ app.api.search imported
+[10:48:37] All steps done!

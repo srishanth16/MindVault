@@ -1,0 +1,6 @@
+[10:47:36] Testing import app.models.note
+[10:47:36] 1. Importing pydantic...
+[10:47:36]    ok
+[10:47:36] 2. Importing app.models.note...
+[10:47:37]    ok
+[10:47:37]    NoteCreate: <class 'app.models.note.NoteCreate'>

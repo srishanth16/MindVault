@@ -1,0 +1,24 @@
+[10:46:48] Starting step by step import
+[10:46:48] Step 1: import app.config
+[10:46:51] ✓ app.config imported
+[10:46:51] Step 2: import app.database
+[10:46:52] ✓ app.database imported
+[10:46:52] Step 3: import app.middleware.auth_middleware
+[10:46:55] ✓ app.middleware.auth_middleware imported
+[10:46:55] Step 4: import app.api.auth
+[10:46:55] ✓ app.api.auth imported
+[10:46:55] Step 5: import app.api.documents
+[10:46:55] ✓ app.api.documents imported
+[10:46:55] Step 6: import app.api.folders
+[10:46:55] ✓ app.api.folders imported
+[10:46:55] Step 7: import app.api.notes
+[10:46:56] ✓ app.api.notes imported
+[10:46:56] Step 8: import app.api.stats
+[10:46:56] ✓ app.api.stats imported
+[10:46:56] Step 9: import app.api.chat
+[10:47:28] ✓ app.api.chat imported
+[10:47:28] Step 10: import app.api.search
+[10:47:28] ✓ app.api.search imported
+[10:47:28] Step 11: import app.main
+[10:47:28] ✓ app.main imported
+[10:47:28] All steps done!
